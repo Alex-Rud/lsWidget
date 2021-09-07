@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ls_widget/colors/colors.dart';
 import 'package:ls_widget/pages/pages.dart';
+import 'package:ls_widget/pages/src/events_page.dart';
 
 class LSApplication extends StatelessWidget {
   @override
@@ -14,6 +15,10 @@ class LSApplication extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: SplashPage(),
+      routes: {
+        EventsPage.routeName: (context) => EventsPage(),
+        EventPage.routeName: (context) => EventPage(),
+      },
     );
   }
 }
